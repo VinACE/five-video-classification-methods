@@ -85,7 +85,7 @@ def conv2d_bn(x,
     if name is not None:
         bn_name = name + '_bn'
         conv_name = name + '_conv'
-   else:
+    else:
         bn_name = None
         conv_name = None
     if K.image_data_format() == 'channels_first':
