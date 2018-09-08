@@ -124,7 +124,7 @@ def get_model(weights='imagenet'):
     x = GlobalAveragePooling2D()(x)
     # let's add a fully-connected layer
     x = Dense(4096, activation='relu')(x)
-	    x = Dense(2048, activation='relu')(x)
+	x = Dense(2048, activation='relu')(x)
     x = Dense(1024, activation='relu')(x)
     
     # and a logistic layer
